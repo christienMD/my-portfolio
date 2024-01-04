@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
+import mdprofile from "@/public/images/mdprofile.jpg";
 
 const HeroSection = () => {
   return (
@@ -42,13 +43,15 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="col-span-5 place-self-center mt-4 lg:mt-8">
-          <Image
-            className="rounded-s"
-            src="/images/MD.jpg"
-            alt="hero image"
-            width={300}
-            height={300}
-          />
+          <div className="rounded-full overflow-hidden h-48 w-48 mx-auto">
+            <Image
+              src={mdprofile}
+              alt="my Image"
+              className="rounded-full"
+              width={300}
+              height={200}
+            />
+          </div>
         </div>
       </div>
     </section>
