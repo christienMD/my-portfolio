@@ -1,24 +1,60 @@
 import Image from "next/image";
-import MD from "@/public/images/MD.jpg";
+import reactImg from "@/public/images/react.webp";
+import htmlImg from "@/public/images/html.webp";
+import cssImg from "@/public/images/css.webp";
+import jsImg from "@/public/images/js.webp";
+import nextImg from "@/public/images/next.webp";
+import gitImg from "@/public/images/git.webp";
+import tsImg from "@/public/images/typescript.png";
+import tailwindImg from "@/public/images/tailwindcss.webp";
+import chakraImg from "@/public/images/icons8-chakra-ui-144.png";
+
+import ImageContainer from "./ImageContainer";
 
 const AboutSection = () => {
   return (
-    <section className="text-white ">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16">
-        <Image src={MD} alt="my-photo" width={350} height={350} />
-        <div>
-          <h2 className="text-4xl font-bold text-white">About Me</h2>
-          <p className="text-base md:text-lg">
-            I am a young enthusiast who is keen on IT and anything about it
-            since my first steps to High School. During the past few years, I
-            gained lots of experience in this field due to the strong desire of
-            becoming an expert in my field. I&apos;m pretty swift at learning
-            new technologies which has contributed to my adaptive skills, easily
-            adapting to new environments and new tech. “For me, frontend
-            development is more than coding. It&apos;s a canvas with a blank
-            page and I am the artist to paint it with colors of coding. NOW!
-            WHAT DO YOU WANT ME TO PAINT?
+    <section className="text-[#c2c9ce] container">
+      <div className="text-center mt-10 flex justify-center items-center">
+        <div className="max-w-xl">
+          <h2 className="text-4xl font-bold text-white my-5">About Me</h2>
+          <p className="text-base md:text-base text-center">
+            I am a Resourceful Frontend Web Developer with a successful track
+            record in developing innovative web designs and features. Possesses
+            solid knowledge of HTML, CSS, JavaScript, TypeScript , React Js and
+            Next Js with ability to quickly learn new technologies. Demonstrated
+            success in debugging, identifying and resolving complex code issues.
           </p>
+        </div>
+      </div>
+      <div className="mt-10 flex justify-center">
+        <div className="flex flex-row flex-wrap max-w-xl justify-center">
+          <ImageContainer>
+            <Image src={htmlImg} alt="html-image" />
+          </ImageContainer>
+          <ImageContainer>
+            <Image src={cssImg} alt="css-image" />
+          </ImageContainer>
+          <ImageContainer>
+            <Image src={jsImg} alt="js-image" />
+          </ImageContainer>
+          <ImageContainer>
+            <Image src={tsImg} alt="ts-image" />
+          </ImageContainer>
+          <ImageContainer>
+            <Image src={reactImg} alt="react-image" />
+          </ImageContainer>
+          <ImageContainer>
+            <Image src={nextImg} alt="nextjs-image" />
+          </ImageContainer>
+          <ImageContainer>
+            <Image src={gitImg} alt="git-image" />
+          </ImageContainer>
+          <ImageContainer>
+            <Image src={tailwindImg} alt="tailwind-image" />
+          </ImageContainer>
+          <ImageContainer>
+            <Image src={chakraImg} alt="git-image" />
+          </ImageContainer>
         </div>
       </div>
     </section>
