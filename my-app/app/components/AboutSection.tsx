@@ -13,6 +13,7 @@ import chakraImg from "@/public/images/icons8-chakra-ui-144.png";
 
 import ImageContainer from "./ImageContainer";
 import AboutSkill from "./AboutSkill";
+import CustomImage from "./customImage";
 
 const AboutSection = () => {
   return (
@@ -35,33 +36,32 @@ const AboutSection = () => {
       </div>
       <div className="mt-10 flex justify-center">
         <div className="flex flex-row flex-wrap sm:max-w-full md:max-w-xl lg:max-w-4xl justify-center">
-          
           <ImageContainer>
-            <Image src={htmlImg} alt="html-image" />
+            <CustomImage src={htmlImg} alt="html-image" />
           </ImageContainer>
           <ImageContainer>
-            <Image src={cssImg} alt="css-image" />
+            <CustomImage src={cssImg} alt="css-image" />
           </ImageContainer>
           <ImageContainer>
-            <Image src={jsImg} alt="js-image" />
+            <CustomImage src={jsImg} alt="js-image" />
           </ImageContainer>
           <ImageContainer>
-            <Image src={tsImg} alt="ts-image" />
+            <CustomImage src={tsImg} alt="ts-image" />
           </ImageContainer>
           <ImageContainer>
-            <Image src={reactImg} alt="react-image" />
+            <CustomImage src={reactImg} alt="react-image" />
           </ImageContainer>
           <ImageContainer>
-            <Image src={nextImg} alt="nextjs-image" />
+            <CustomImage src={nextImg} alt="nextjs-image" />
           </ImageContainer>
           <ImageContainer>
-            <Image src={gitImg} alt="git-image" />
+            <CustomImage src={gitImg} alt="git-image" />
           </ImageContainer>
           <ImageContainer>
-            <Image src={tailwindImg} alt="tailwind-image" />
+            <CustomImage src={tailwindImg} alt="tailwind-image" />
           </ImageContainer>
           <ImageContainer>
-            <Image src={chakraImg} alt="git-image" />
+            <CustomImage src={chakraImg} alt="git-image" />
           </ImageContainer>
         </div>
       </div>
