@@ -1,4 +1,3 @@
-import issueTracker from "@/public/images/gameHub-small.png";
 
 export interface Project {
   id: number;
@@ -7,7 +6,7 @@ export interface Project {
   imgUrl: string;
   gitUrl: string;
   previewUrl: string;
-  tag?: { all: string; web: string };
+  tag: string[];
 }
 
 export const projectData: Project[] = [
@@ -17,9 +16,9 @@ export const projectData: Project[] = [
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor eligendi repudiandae ipsum at doloribus sapiente placeat ex necessitatibus iusto",
     imgUrl: "/images/online-hosting.png",
-    tag: { all: "All", web: "Web" },
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/christienMD/mdchristien",
+    previewUrl: "https://mdchristien.netlify.app/",
   },
   {
     id: 2,
@@ -27,9 +26,9 @@ export const projectData: Project[] = [
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor eligendi repudiandae ipsum at doloribus sapiente placeat ex necessitatibus iusto",
     imgUrl: "/images/gameHub-small.png",
-    gitUrl: "/",
-    previewUrl: "/",
-    tag: { all: "All", web: "Web" },
+    gitUrl: "https://github.com/christienMD/game-hub",
+    previewUrl: "https://mdchristien-gamehub.vercel.app/",
+    tag: ["All", "Web"],
   },
   {
     id: 3,
@@ -37,8 +36,8 @@ export const projectData: Project[] = [
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor eligendi repudiandae ipsum at doloribus sapiente placeat ex necessitatibus iusto",
     imgUrl: "/images/issueTracker-crop.png",
-    gitUrl: "/",
-    previewUrl: "/",
-    tag: { all: "All", web: "Web" },
+    gitUrl: "https://github.com/christienMD/issue-tracker",
+    previewUrl: "https://issue-tracker-md-christien.vercel.app/",
+    tag: ["All", "Web"],
   },
 ];
