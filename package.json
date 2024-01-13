@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "daisyui": "^4.5.0"
+    "daisyui": "^4.6.0"
   },
   "dependencies": {
     "react-icons": "^4.12.0"
