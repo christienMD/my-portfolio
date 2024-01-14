@@ -37,7 +37,7 @@ const ProjectsSection = () => {
           name="Mobile"
         />
       </div>
-      <div className="grid md:grid-cols-3 md:gap-3 gap-6">
+      <div className="grid md:grid-cols-3 md:gap-6 gap-6">
         {filteredProjects.map((project) => (
           <ProjectCard
             key={project.id}
