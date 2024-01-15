@@ -3,6 +3,7 @@
 import Image from "next/image";
 import md from "@/public/images/MD.jpg";
 import Skills from "./Skills";
+import Education from "./Education";
 
 const AboutSkill = () => {
   return (
@@ -32,7 +33,7 @@ const AboutSkill = () => {
             aria-label="Education"
           />
           <div role="tabpanel" className="tab-content pt-4">
-            Tab content 2
+            <Education />
           </div>
 
           <input

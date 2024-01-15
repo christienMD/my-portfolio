@@ -1,13 +1,14 @@
-import React from 'react'
+import React from "react";
 
 const Education = () => {
   return (
     <div>
-      <h2> School:{' '} <span>
-        </span>University Of Buea</h2>
-
+      <h3>
+        School:<span> University Of Buea.</span>
+      </h3>
+      <h3>Degree: <span>Bachelor of Science</span></h3>
     </div>
-  )
-}
+  );
+};
 
-export default Education
+export default Education;

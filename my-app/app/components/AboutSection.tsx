@@ -13,7 +13,7 @@ import chakraImg from "@/public/images/icons8-chakra-ui-144.png";
 
 import ImageContainer from "./ImageContainer";
 import AboutSkill from "./AboutSkill";
-import CustomImage from "./customImage";
+import CustomImage from "./CustomImage";
 
 const AboutSection = () => {
   return (

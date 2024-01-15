@@ -1,6 +1,7 @@
 import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { Project } from "../projectData";
+import Stack from "./Stack";
 
 interface Props {
   title: string;
@@ -8,6 +9,7 @@ interface Props {
   imgUrl: string;
   gitUrl: string;
   previewUrl: string;
+  stack: string[];
 }
 
 const ProjectCard = ({
@@ -16,6 +18,7 @@ const ProjectCard = ({
   description,
   gitUrl,
   previewUrl,
+  stack,
 }: Props) => {
   return (
     <div>
@@ -43,9 +46,14 @@ const ProjectCard = ({
         </div>
       </div>
 
-      <div className="text-white rounded-b-xl bg-[#181818] py-6 px-4">
+      <div className="text-white rounded-b-xl  bg-[#181818] py-6 px-4">
         <h5 className=" text-xl font-semibold mb-2">{title}</h5>
         <p className="text-[#ADB7BE]">{description}</p>
+        <div className="mt-4">
+          {stack.map((s) => (
+            <Stack key={s}>{s}</Stack>
+          ))}
+        </div>
       </div>
     </div>
   );
