@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "next/image";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
 import Link from "next/link";
 
 const EmailSection = () => {
@@ -16,8 +18,13 @@ const EmailSection = () => {
           quae possimus ad!
         </p>
         <div className="socials flex flex-wrap-reverse gap-2 text-white">
-          <Link href="https://github/ChristienMD">git Icon</Link>
-          <Link href="https://github/ChristienMD">Linkedin icon</Link>
+          <Link href="https://github/ChristienMD">
+            <FaGithub size={20}/>
+          </Link>
+
+          <Link href="https://www.linkedin.com/in/mesueh-christien-18886121b">
+            <FaLinkedinIn size={20} />
+          </Link>
         </div>
       </div>
       <div className="">
@@ -55,7 +62,7 @@ const EmailSection = () => {
           <div className="mb-6">
             <label
               htmlFor="message"
-              className="text-white block sm:text-sm md:text-base font-medium"
+              className="text-white mb-2 block sm:text-sm md:text-base font-medium"
             >
               Message
             </label>

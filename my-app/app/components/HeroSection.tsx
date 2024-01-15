@@ -28,7 +28,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base mb-6 lg:text-base">
-            Frontend Enthusiast 🚀 I make beautiful things with React. I am
+            Frontend Enthusiast. I make beautiful things with React & Next. I am
             Passionate about making things visually stunning, even when no
             one&apos;s watching. Let&apos;s create something React-ive
             together!

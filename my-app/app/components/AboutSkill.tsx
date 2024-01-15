@@ -4,6 +4,7 @@ import Image from "next/image";
 import md from "@/public/images/MD.jpg";
 import Skills from "./Skills";
 import Education from "./Education";
+import Experience from "./Experience";
 
 const AboutSkill = () => {
   return (
@@ -44,7 +45,7 @@ const AboutSkill = () => {
             aria-label="Experience"
           />
           <div role="tabpanel" className="tab-content pt-4">
-            Tab content 3
+            <Experience />
           </div>
         </div>
       </div>
