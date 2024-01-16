@@ -17,7 +17,7 @@ import CustomImage from "./CustomImage";
 
 const AboutSection = () => {
   return (
-    <section className="text-[#c2c9ce]">
+    <section className="text-[#c2c9ce]" id="about">
       <div className="text-center mt-10 flex justify-center items-center">
         <div className="md:max-w-2xl lg:max-w-3xl">
           <h2 className="text-4xl font-bold text-white my-5">About Me</h2>

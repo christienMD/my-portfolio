@@ -13,10 +13,8 @@ interface Props {
 
 const Cerificate = ({ src, alt }: Props) => {
   return (
-    <div className="card card-compact w-96 bg-base-100 shadow-xl overflow-hidden">
-      <figure>
-        <Image src={src} alt={alt} />
-      </figure>
+    <div className="card card-compact bg-base-100 shadow-xl overflow-hidden sm:max-w-full sm:mx-auto">
+      <Image src={src} alt={alt} className="object-cover" />
     </div>
   );
 };

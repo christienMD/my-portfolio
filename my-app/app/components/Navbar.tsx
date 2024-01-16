@@ -7,6 +7,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverLay from "./MenuOverLay";
 
 const navLinks = [
+  { label: "Home", path: "/" },
   { label: "About", path: "#about" },
   { label: "Projects", path: "#projects" },
   { label: "Contact", path: "#contact" },
@@ -16,13 +17,16 @@ const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-90 ">
+    <nav className="fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-95 ">
       <div className="flex flex-wrap items-center justify-between mx-auto p-5">
         <Link
           href="/"
-          className="text-2xl md:text-3xl text-white font-semibold"
+          className="text-3xl md:text-3xl text-white font-semibold tracking-tight"
         >
-          LOGO
+          <span className="tracking-tighter">MD</span>
+          <span className="text-sm text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+            Christien
+          </span>
         </Link>
         <div className="block md:hidden">
           {!navbarOpen ? (
@@ -57,3 +61,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
