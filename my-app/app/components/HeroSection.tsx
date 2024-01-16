@@ -23,7 +23,7 @@ const HeroSection = () => {
           className="col-span-7 place-self-center text-center sm:text-left justify-self-start"
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.3 }}
         >
           <h1 className="text-white mb-4 text-4xl sm:text-3xl lg:text-5xl lg:leading-none font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
@@ -66,7 +66,7 @@ const HeroSection = () => {
           className="col-span-5 place-self-center mt-4 lg:mt-8"
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5, easeIn: 0.3 }}
+          transition={{ duration: 0.3, easeIn: 0.3 }}
         >
           <div className="rounded-full overflow-hidden h-48 w-48 mx-auto">
             <Image
