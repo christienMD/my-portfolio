@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
+import { FaRegEnvelope } from "react-icons/fa";
 import Link from "next/link";
 
 const EmailSection = () => {
@@ -12,18 +13,23 @@ const EmailSection = () => {
         <h5 className="text-2xl font-bold text-white my-2">
           Let&apos;s Connect
         </h5>
-        <p className="text-[#ADB7BE] mb-4 max-w-md">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat minus,
-          delectus doloremque laborum aliquam officia asperiores repudiandae
-          quae possimus ad!
+        <p className="text-[#ADB7BE] mb-4 max-w-md text-base">
+          Hello There! I am Excited to connect with you. Whether it&apos;s for
+          opportunities, collaborations, or just a tech chat, I&apos;m all ears!
+          Feel free to reach out—I&apos;m not only a dedicated developer but
+          also friendly and open for meaningful conversations. Looking forward
+          to the chance to connect and create something amazing!
         </p>
         <div className="socials flex flex-wrap-reverse gap-2 text-white">
-          <Link href="https://github/ChristienMD">
-            <FaGithub size={20}/>
+          <Link href="https://github.com/christienMD">
+            <FaGithub size={22} />
           </Link>
 
           <Link href="https://www.linkedin.com/in/mesueh-christien-18886121b">
-            <FaLinkedinIn size={20} />
+            <FaLinkedinIn size={22} />
+          </Link>
+          <Link href="https://mesuehchristian12@gmail.com">
+            <FaRegEnvelope size={22} />
           </Link>
         </div>
       </div>
@@ -56,7 +62,7 @@ const EmailSection = () => {
               type="text"
               id="subject"
               required
-              placeholder="hi from md"
+              placeholder="Subject"
             />
           </div>
           <div className="mb-6">
