@@ -2,13 +2,14 @@
 
 # dependencies
 /node_modules
-./node_modules
+
 /.pnp
 .pnp.js
 .yarn/install-state.gz
 
 # testing
 /coverage
+git remote remove origin
 
 # next.js
 /.next/
