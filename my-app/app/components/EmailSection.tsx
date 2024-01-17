@@ -20,9 +20,9 @@ const EmailSection = () => {
           <p className="text-[#ADB7BE] mb-4 max-w-md text-base">
             Hello There! I am Excited to connect with you. Whether it&apos;s for
             opportunities, collaborations, or just a tech chat, I&apos;m all
-            ears! Feel free to reach out—I&apos;m not only a dedicated developer
+            ears Feel free to reach out—I&apos;m not only a dedicated developer
             but also friendly and open for meaningful conversations. Looking
-            forward to the chance to connect and create something amazing!
+            forward to the chance to connect and create something amazing.
           </p>
           <div className="socials flex flex-wrap-reverse gap-2 text-white">
             <Link href="https://github.com/christienMD">
