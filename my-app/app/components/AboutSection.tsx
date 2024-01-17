@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import reactImg from "@/public/images/react.webp";
 import htmlImg from "@/public/images/html.webp";
 import cssImg from "@/public/images/css.webp";
@@ -10,7 +9,6 @@ import gitImg from "@/public/images/git.webp";
 import tsImg from "@/public/images/typescript.png";
 import tailwindImg from "@/public/images/tailwindcss.webp";
 import chakraImg from "@/public/images/icons8-chakra-ui-144.png";
-
 import ImageContainer from "./ImageContainer";
 import AboutSkill from "./AboutSkill";
 import CustomImage from "./CustomImage";
