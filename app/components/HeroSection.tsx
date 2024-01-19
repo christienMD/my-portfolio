@@ -57,7 +57,7 @@ const HeroSection = () => {
               onClick={handleDownloadCV}
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                Download Resume( CV )
+                Download Resume(CV)
               </span>
             </button>
           </div>

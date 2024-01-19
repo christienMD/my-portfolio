@@ -1,11 +1,55 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaRegEnvelope } from "react-icons/fa";
 import Link from "next/link";
+import z from "zod";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+
+const schema = z.object({
+  email: z.string().email(),
+  subject: z
+    .string()
+    .min(3, { message: "Subject must be at least 3 characters long" })
+    .max(50),
+  message: z
+    .string()
+    .min(3, { message: "message must be at least 3 characters long" })
+    .max(1500, { message: "Please your message cannot exceed the 1500 limit" }),
+});
+
+export type FormData = z.infer<typeof schema>;
 
 const EmailSection = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<FormData>({
+    resolver: zodResolver(schema),
+  });
+
+  const onSubmit = (data: FormData) => {
+    const apiEndpoint = "api/send-email";
+
+    fetch(apiEndpoint, {
+      method: "POST",
+      body: JSON.stringify(data),
+    })
+      .then((res) => res.json())
+      .then((response) => {
+        console.log("jj");
+        alert(response.message);
+      })
+      .catch((err) => {
+        alert(err);
+      });
+  };
+
   return (
     <section id="contact" className="md:my-12 py-24 mt-0">
       <h2 className="text-center text-3xl font-bold text-white mb-5">
@@ -38,7 +82,7 @@ const EmailSection = () => {
           </div>
         </div>
         <div className="">
-          <form className="flex flex-col">
+          <form className="flex flex-col" onSubmit={handleSubmit(onSubmit)}>
             <div className="mb-6">
               <label
                 htmlFor="email"
@@ -47,6 +91,7 @@ const EmailSection = () => {
                 Your email
               </label>
               <input
+                {...register("email")}
                 className="bg-[#18191E] border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                 type="email"
                 id="email"
@@ -54,6 +99,9 @@ const EmailSection = () => {
                 placeholder="mdchristien@md.com"
               />
             </div>
+            {errors.email && (
+              <p className="text-error">{errors.email.message}</p>
+            )}
             <div className="mb-6">
               <label
                 htmlFor="subject"
@@ -62,12 +110,16 @@ const EmailSection = () => {
                 Subject
               </label>
               <input
+                {...register("subject")}
                 className="bg-[#18191E] border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                 type="text"
                 id="subject"
                 required
                 placeholder="Subject"
               />
+              {errors.subject && (
+                <p className="text-error">{errors.subject.message}</p>
+              )}
             </div>
             <div className="mb-6">
               <label
@@ -77,11 +129,15 @@ const EmailSection = () => {
                 Message
               </label>
               <textarea
+                {...register("message")}
                 name="message"
                 id="message"
                 className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                 placeholder="Send a Message"
               />
+              {errors.message && (
+                <p className="text-error">{errors.message.message}</p>
+              )}
             </div>
             <button
               type="submit"
