@@ -20,23 +20,14 @@ export async function POST(request: NextRequest) {
       })
     );
 
-    const emailBody = `
-  <html>
-    <body style="background-color: #ADB7BE; color: #FFFFFF;">
-      <h2 style="color: #6B46C1;">Subject: ${subject}</h2>
-      <h3>From: ${email}</h3>
-      <p>${message}</p>
-    </body>
-  </html>
-`;
-
     const mailOptions: Mail.Options = {
       from: email,
       to: process.env.MY_EMAIL,
       // cc: email, (uncomment this line if you want to send a copy to the sender)
-      subject: subject,
-      text: emailBody,
+      subject: `${subject}  From: (${email})`,
+      text: message,
     };
+
 
     const infos = await transport.sendMail(mailOptions);
     console.log("Email sent");

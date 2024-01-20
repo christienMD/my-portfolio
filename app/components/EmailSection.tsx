@@ -29,6 +29,7 @@ const EmailSection = () => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm<FormData>({
     resolver: zodResolver(schema),
@@ -44,6 +45,7 @@ const EmailSection = () => {
       .then((res) => res.json())
       .then((response) => {
         toast.success("Your Message has been sent successfully. Thank you!");
+        reset();
       })
       .catch((err) => {
         toast.error(
