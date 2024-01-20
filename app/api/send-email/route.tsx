@@ -3,6 +3,7 @@ import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 import smtpTransport from "nodemailer-smtp-transport";
 import Mail from "nodemailer/lib/mailer";
+import ejs from "ejs";
 
 export async function POST(request: NextRequest) {
   try {
@@ -19,6 +20,15 @@ export async function POST(request: NextRequest) {
         },
       })
     );
+
+    const templateData = {
+      subject: subject,
+      email: email,
+      message: message,
+    };
+
+    // Render the React component to HTML using ejs
+    const emailBody = ejs.render(`<%= PortfolioEmailTemplate %>`, templateData);
 
     const mailOptions: Mail.Options = {
       from: email,

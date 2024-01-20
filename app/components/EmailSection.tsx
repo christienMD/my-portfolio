@@ -9,6 +9,7 @@ import Link from "next/link";
 import z from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+import toast, { Toaster } from "react-hot-toast";
 
 const schema = z.object({
   email: z.string().email(),
@@ -42,16 +43,18 @@ const EmailSection = () => {
     })
       .then((res) => res.json())
       .then((response) => {
-        console.log("jj");
-        alert(response.message);
+        toast.success("Your Message been sent successfully. Thank you!");
       })
       .catch((err) => {
-        alert(err);
+        toast.error(
+          "something went wrong, pls refresh the page and try again!"
+        );
       });
   };
 
   return (
     <section id="contact" className="md:my-12 py-24 mt-0">
+      <Toaster toastOptions={{ duration: 5000 }} />
       <h2 className="text-center text-3xl font-bold text-white mb-5">
         Contact Me
       </h2>
