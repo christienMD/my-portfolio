@@ -44,8 +44,8 @@ const EmailSection = () => {
     })
       .then((res) => res.json())
       .then((response) => {
+        reset()
         toast.success("Your Message has been sent successfully. Thank you!");
-        reset();
       })
       .catch((err) => {
         toast.error(
@@ -56,7 +56,7 @@ const EmailSection = () => {
 
   return (
     <section id="contact" className="md:my-12 py-24 mt-0">
-      <Toaster toastOptions={{ duration: 5000 }} />
+      <Toaster toastOptions={{ duration: 6000 }} />
       <h2 className="text-center text-3xl font-bold text-white mb-5">
         Contact Me
       </h2>
