@@ -1,3 +1,4 @@
+import PortfolioEmailTemplate from "@/emails/PortfolioEmailTemplate";
 import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 import smtpTransport from "nodemailer-smtp-transport";
@@ -23,7 +24,7 @@ export async function POST(request: NextRequest) {
       from: email,
       to: process.env.MY_EMAIL,
       // cc: email, (uncomment this line if you want to send a copy to the sender)
-      subject: `Message from ${subject} (${email})`,
+      subject: `<p className='font-bold'>Message from ${subject} (${email})</p>`,
       text: message,
     };
 
