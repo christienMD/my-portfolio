@@ -3,7 +3,6 @@ import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 import smtpTransport from "nodemailer-smtp-transport";
 import Mail from "nodemailer/lib/mailer";
-import ejs from "ejs";
 
 export async function POST(request: NextRequest) {
   try {
@@ -21,21 +20,22 @@ export async function POST(request: NextRequest) {
       })
     );
 
-    const templateData = {
-      subject: subject,
-      email: email,
-      message: message,
-    };
-
-    // Render the React component to HTML using ejs
-    const emailBody = ejs.render(`<%= PortfolioEmailTemplate %>`, templateData);
+    const emailBody = `
+  <html>
+    <body style="background-color: #ADB7BE; color: #FFFFFF;">
+      <h2 style="color: #6B46C1;">Subject: ${subject}</h2>
+      <h3>From: ${email}</h3>
+      <p>${message}</p>
+    </body>
+  </html>
+`;
 
     const mailOptions: Mail.Options = {
       from: email,
       to: process.env.MY_EMAIL,
       // cc: email, (uncomment this line if you want to send a copy to the sender)
-      subject: `<p className='font-bold'>Message from ${subject} (${email})</p>`,
-      text: message,
+      subject: subject,
+      text: emailBody,
     };
 
     const infos = await transport.sendMail(mailOptions);

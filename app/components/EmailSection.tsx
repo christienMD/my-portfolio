@@ -43,7 +43,7 @@ const EmailSection = () => {
     })
       .then((res) => res.json())
       .then((response) => {
-        toast.success("Your Message been sent successfully. Thank you!");
+        toast.success("Your Message has been sent successfully. Thank you!");
       })
       .catch((err) => {
         toast.error(
