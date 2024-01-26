@@ -11,7 +11,7 @@ import { easeIn } from "framer-motion/dom";
 const HeroSection = () => {
   const handleDownloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/files/Mesueh_Christien_Resume.pdf";
+    link.href = `${window.location.origin}/files/Mesueh_Christien_Resume.pdf`;
     link.download = "Mesueh_Christien_Resume.pdf";
     link.click();
   };
