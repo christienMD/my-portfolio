@@ -20,14 +20,15 @@ const AboutSection = () => {
         <div className="md:max-w-2xl lg:max-w-3xl">
           <h2 className="text-4xl font-bold text-white my-5">About Me</h2>
           <p className="text-base align-baseline items-center">
-            I am a Resourceful Frontend Web Developer with a successful track
-            record in developing innovative web designs and features. I Possess
-            solid knowledge of HTML, CSS, JavaScript, TypeScript , React Js and
-            Next Js leveraging a comprehensive understanding gained through my
-            computer science degree with ability to quickly learn new
-            technologies. Beyond my formal education, I am continuously
-            expanding my skill set to incorporate emerging technologies and
-            industry best practices.
+            I am Passionate Frontend Web Developer with a proven record of creating
+            captivating web designs and dynamic features. Equipped with a robust
+            foundation in HTML, CSS, JavaScript, TypeScript, React.js, and
+            Next.js, honed through a rigorous computer science degree. I have a
+            keen ability to adapt to new technologies swiftly. Beyond formal
+            education, I consistently broaden my skill set, embracing emerging
+            technologies and industry best practices. Committed to delivering
+            exceptional user experiences through innovation and continuous
+            learning.
           </p>
         </div>
       </div>

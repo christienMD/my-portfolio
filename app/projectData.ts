@@ -14,10 +14,10 @@ export const projectData: Project[] = [
     id: 1,
     title: "Amazone Clone",
     description:
-      "This is a Beautifull Full-stack Production-grade web app for tracking issues. This web app includes feature such as: Dashboard, Charts, Sorting, Filtering, Pagination, Skeletons , CRUD , Forms, Caching, Authentication and more.",
+      "A comprehensive e-commerce platform built with Next.js and Tailwind CSS, mirroring the functionality and design of the renowned Amazon website. Features include user authentication with NextAuth.js, state management with React Context and Reducers. Explore a familiar shopping experience with this fully responsive web application.",
     imgUrl: "/images/amazone-clone.png",
-    gitUrl: "https://github.com/christienMD/amazone-clone",
-    previewUrl: "https://issue-tracker-md-christien.vercel.app/",
+    gitUrl: "https://github.com/christienMD/Amazone-clone",
+    previewUrl: "https://amazone-clone-mdchristien.vercel.app/",
     tag: ["All", "Web"],
     stack: [
       "HTML5",
@@ -30,6 +30,7 @@ export const projectData: Project[] = [
       "Axios",
       "Tailwind CSS",
       "NextAuth.js",
+      "Stripe",
     ],
   },
   {

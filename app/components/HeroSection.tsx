@@ -7,6 +7,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import React from "react";
 import { easeIn } from "framer-motion/dom";
+import { FaGithub, FaLinkedinIn, FaRegEnvelope } from "react-icons/fa";
 
 const HeroSection = () => {
   const handleDownloadCV = () => {
@@ -68,14 +69,31 @@ const HeroSection = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.3, easeIn: 0.3 }}
         >
-          <div className="rounded-full overflow-hidden h-48 w-48 mx-auto">
-            <Image
-              src={mdprofile}
-              alt="my Image"
-              className="rounded-full"
-              width={300}
-              height={200}
-            />
+          <div className="flex flex-col gap-2 justify-center items-center">
+            <div className="rounded-full overflow-hidden h-48 w-48 mx-auto">
+              <Image
+                src={mdprofile}
+                alt="my Image"
+                className="rounded-full"
+                width={300}
+                height={200}
+              />
+            </div>
+            <div className="flex gap-3 items-center text-white">
+              <Link
+                href="https://github.com/christienMD"
+                className="rounded-full p-2 border border-gray-300"
+              >
+                <FaGithub size={24} />
+              </Link>
+
+              <Link
+                href="https://www.linkedin.com/in/mesueh-christien-18886121b"
+                className="rounded-full p-2 border border-gray-300"
+              >
+                <FaLinkedinIn size={24} />
+              </Link>
+            </div>
           </div>
         </motion.div>
       </div>
