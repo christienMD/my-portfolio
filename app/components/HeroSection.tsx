@@ -70,15 +70,28 @@ const HeroSection = () => {
           transition={{ duration: 0.3, easeIn: 0.3 }}
         >
           <div className="flex flex-col gap-2 justify-center items-center">
-            <div className="rounded-full overflow-hidden h-48 w-48 mx-auto">
-              <Image
-                src={mdprofile}
-                alt="my Image"
-                className="rounded-full"
-                width={300}
-                height={200}
-              />
-            </div>
+            <motion.div
+              initial={{ y: 0 }}
+              animate={{
+                y: [-10, 0, -10],
+                z: [-5, 0, -4],
+                transition: {
+                  duration: 1.6,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                },
+              }}
+            >
+              <div className="rounded-full overflow-hidden h-48 w-48 mx-auto">
+                <Image
+                  src={mdprofile}
+                  alt="my Image"
+                  className="rounded-full"
+                  width={300}
+                  height={200}
+                />
+              </div>
+            </motion.div>
             <div className="flex gap-3 items-center text-white">
               <Link
                 href="https://github.com/christienMD"
