@@ -1,7 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const withMT = require("@material-tailwind/react/utils/withMT");
- 
+
 module.exports = withMT({
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -16,10 +16,6 @@ module.exports = withMT({
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
-  },
-  plugins: [require("daisyui")],
-  daisyui: {
-    themes: ["winter"],
   },
 });
 // export default config;

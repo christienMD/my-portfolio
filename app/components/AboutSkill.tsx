@@ -5,51 +5,61 @@ import md from "@/public/images/MD.jpg";
 import Skills from "./Skills";
 import Education from "./Education";
 import Experience from "./Experience";
+import { Tab, TabPanel, Tabs, TabsBody, TabsHeader } from "../MaterialTailwind";
+import { useState } from "react";
 
 const AboutSkill = () => {
+  const [activeTab, setActiveTab] = useState("skills");
+
+  const data = [
+    {
+      label: "Skills",
+      value: "skills",
+      desc: <Skills />,
+    },
+    {
+      label: "Education",
+      value: "education",
+      desc: <Education />,
+    },
+    {
+      label: "Experience",
+      value: "experience",
+      desc: <Experience />,
+    },
+  ];
+
   return (
-    <section className="text-white mt-5">
-      <h2 className="text-2xl text-white font-bold text-center mb-2">
-        More About Me
-      </h2>
-      <div className="flex justify-center">
-        <div role="tablist" className="tabs tabs-bordered md:tabs-lg">
-          <input
-            type="radio"
-            name="my_tabs_1"
-            role="tab"
-            className="tab"
-            aria-label="Skills"
-            defaultChecked
-          />
-          <div role="tabpanel" className="tab-content pt-4">
-            <Skills />
-          </div>
-
-          <input
-            type="radio"
-            name="my_tabs_1"
-            role="tab"
-            className="tab"
-            aria-label="Education"
-          />
-          <div role="tabpanel" className="tab-content pt-4">
-            <Education />
-          </div>
-
-          <input
-            type="radio"
-            name="my_tabs_1"
-            role="tab"
-            className="tab"
-            aria-label="Experience"
-          />
-          <div role="tabpanel" className="tab-content pt-4">
-            <Experience />
-          </div>
-        </div>
-      </div>
-    </section>
+    <div className="flex justify-center items-center mt-10">
+      <Tabs value={activeTab} className="max-w-[40rem]">
+        <TabsHeader
+          placeholder=""
+          className="bg-transparent"
+          indicatorProps={{
+            className: "bg-gray-900/10 shadow-none !text-gray-900",
+          }}
+        >
+          {data.map(({ label, value }) => (
+            <Tab
+              key={value}
+              value={value}
+              onClick={() => setActiveTab(value)}
+              className={activeTab === value ? "text-white" : ""}
+              placeholder=""
+            >
+              {label}
+            </Tab>
+          ))}
+        </TabsHeader>
+        <TabsBody placeholder="">
+          {data.map(({ value, desc }) => (
+            <TabPanel key={value} value={value}>
+              {desc}
+            </TabPanel>
+          ))}
+        </TabsBody>
+      </Tabs>
+    </div>
   );
 };
 
