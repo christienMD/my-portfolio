@@ -56,36 +56,20 @@ const ProjectCard = ({
           {stack.map((s, index) => (
             <Stacks key={index}>{s}</Stacks>
           ))}{" "}
-          <div className="flex gap-3 mt-1.5">
-            <Button
-              placeholder=""
-              color="gray"
-              className="flex items-center gap-3 border-2 border-[#ADB7BE] text-white"
+          <div className="flex gap-1 mt-1.5">
+            <Link
+              href={previewUrl}
+              className="h-7 mt-1.5 w-14 block ms-2 md:hidden border-2 relative rounded-md border-[#ADB7BE] hover:border-white group/link tooltip tooltip-open tooltip-right"
             >
               <EyeIcon className="h-5 w-5 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:text-white" />
-            </Button>
-            <Button
-              placeholder=""
-              variant="filled"
-              className="flex items-center gap-3 border-2 border-[#ADB7BE] text-white"
+            </Link>
+            <Link
+              href={gitUrl}
+              className="h-7 mt-1.5 w-14 block ms-2 md:hidden border-2 relative rounded-md border-[#ADB7BE] hover:border-white group/link tooltip tooltip-open tooltip-right"
             >
-              <EyeIcon className="h-5 w-5 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:text-white" />
-            </Button>
+              <CodeBracketIcon className="h-5 w-5 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:text-white" />
+            </Link>
           </div>
-          <Link
-            href={previewUrl}
-            className="h-7 mt-1.5 w-12 block ms-2 md:hidden border-2 relative rounded-md border-[#ADB7BE] hover:border-white group/link tooltip tooltip-open tooltip-right"
-            data-tip="view live"
-          >
-            <EyeIcon className="h-5 w-5 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:text-white" />
-          </Link>
-          <Link
-            href={gitUrl}
-            className="h-7 w-12 mt-2 ms-2 md:hidden border-2 relative rounded-md border-[#ADB7BE] hover:border-white group/link tooltip tooltip-open tooltip-right"
-            data-tip="view code"
-          >
-            <CodeBracketIcon className="h-5 w-5 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:text-white" />
-          </Link>
         </div>
       </div>
     </div>
