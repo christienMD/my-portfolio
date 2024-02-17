@@ -3,7 +3,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer className="footer border border-t-[#33353F] border-l-transparent border-r-transparent text-white">
-      <div className="container p-12 flex justify-between ">
+      <div className="container p-12 flex justify-between gap-7">
         <Link
           href="/"
           className="text-3xl md:text-3xl text-white font-semibold tracking-tight"
