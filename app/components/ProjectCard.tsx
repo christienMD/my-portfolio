@@ -22,7 +22,7 @@ const ProjectCard = ({
   stack,
 }: Props) => {
   return (
-    <div>
+    <div className="flex flex-col h-full">
       <div
         className="h-56 md:h-56 rounded-txl relative group"
         style={{

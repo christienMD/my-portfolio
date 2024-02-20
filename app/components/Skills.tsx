@@ -49,7 +49,7 @@ const Skills = () => {
         />
       </div>
       <div>
-        <h5>React Query</h5>
+        <h5>React Query & React Context</h5>
         <Progress
           placeholder=""
           value={70}
@@ -63,7 +63,7 @@ const Skills = () => {
           color="indigo"
           className="mb-2 bg-[#ADB7BE]"
         />
-        <h5>Tailwind CSS + Material UI</h5>
+        <h5>Tailwind CSS + Material Tailwind</h5>
         <Progress
           placeholder=""
           value={75}

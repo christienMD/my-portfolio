@@ -13,6 +13,7 @@ import ImageContainer from "./ImageContainer";
 import AboutSkill from "./AboutSkill";
 import CustomImage from "./CustomImage";
 
+
 const AboutSection = () => {
   return (
     <section className="text-[#c2c9ce]" id="about">
