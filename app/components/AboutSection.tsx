@@ -33,7 +33,7 @@ const AboutSection = () => {
         </div>
       </div>
       <div className="mt-10 flex justify-center">
-        <div className="flex flex-row flex-wrap sm:max-w-full md:max-w-xl lg:max-w-4xl justify-center">
+        <div className="flex flex-row flex-wrap sm:max-w-full md:max-w-xl lg:max-w-4xl justify-center gap-2">
           <ImageContainer>
             <CustomImage src={htmlImg} alt="html-image" />
           </ImageContainer>

@@ -7,7 +7,7 @@ interface Props {
   hieght?: number;
 }
 
-const CustomImage = ({ src, alt, width, hieght }: Props) => {
+const CustomImage = ({ src, alt }: Props) => {
   return <Image src={src} alt={alt} width={66} height={70} />;
 };
 

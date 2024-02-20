@@ -63,7 +63,7 @@ const Skills = () => {
           color="indigo"
           className="mb-2 bg-[#ADB7BE]"
         />
-        <h5>Tailwind CSS + Daisy UI</h5>
+        <h5>Tailwind CSS + Material UI</h5>
         <Progress
           placeholder=""
           value={75}
