@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import {
   Tabs,
@@ -7,7 +7,29 @@ import {
   Tab,
   TabPanel,
   Button,
-  Progress
+  Progress,
+  Timeline,
+  TimelineItem,
+  TimelineConnector,
+  TimelineHeader,
+  TimelineIcon,
+  TimelineBody,
+  Typography,
 } from "@material-tailwind/react";
 
-export { Tabs, TabsHeader, TabsBody, Tab, TabPanel , Button, Progress};
+export {
+  Tabs,
+  TabsHeader,
+  TabsBody,
+  Tab,
+  TabPanel,
+  Button,
+  Progress,
+  Timeline,
+  TimelineItem,
+  TimelineConnector,
+  TimelineHeader,
+  TimelineIcon,
+  TimelineBody,
+  Typography,
+};
