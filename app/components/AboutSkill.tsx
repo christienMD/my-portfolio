@@ -36,7 +36,7 @@ const AboutSkill = () => {
           placeholder=""
           className="bg-transparent"
           indicatorProps={{
-            className: "bg-gray-900/10 shadow-none !text-gray-900",
+            className: "bg-gray-600/10 shadow-none !text-gray-900",
           }}
         >
           {data.map(({ label, value }) => (
@@ -44,7 +44,7 @@ const AboutSkill = () => {
               key={value}
               value={value}
               onClick={() => setActiveTab(value)}
-              className={activeTab === value ? "text-white" : ""}
+              className={activeTab === value ? "text-gray-500 text-lg font-semi-bold" : "text-gray-700"}
               placeholder=""
             >
               {label}

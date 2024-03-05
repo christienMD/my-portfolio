@@ -17,3 +17,21 @@ body {
   color: rgb(var(--foreground-rgb));
 }
 
+@keyframes floater {
+  0% {
+    transform: translateY(-3%);
+    transition: ease 0.5s;
+  }
+
+  50% {
+    transform: translateY(3%);
+    transition: ease 0.5s;
+    scale: 1.1;
+  }
+}
+
+.floating-img {
+  transform: translateY(-3%);
+  animation: floater 3s infinite;
+  transition: ease 0.5s;
+}

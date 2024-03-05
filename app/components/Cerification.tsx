@@ -10,7 +10,7 @@ import Cerificate from "./Certificate";
 const Cerification = () => {
   return (
     <div className="mt-10">
-      <h2 className="text-3xl font-bold text-white mb-3 text-center">
+      <h2 className="text-3xl font-bold text-white mb-7 text-center">
         Certificates
       </h2>
       <div className="grid md:grid-cols-3 md:gap-6 gap-6">

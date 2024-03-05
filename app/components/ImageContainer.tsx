@@ -6,7 +6,7 @@ interface Props {
 
 const ImageContainer = ({ children }: Props) => {
   return (
-    <div className="timeline-start rounded-full overflow-hidden sm:w-18 sm:h-22">
+    <div className="timeline-start rounded-full overflow-hidden sm:w-18 sm:h-22 mx-1">
       {children}
     </div>
   );
