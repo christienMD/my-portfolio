@@ -22,7 +22,7 @@ const Experience = () => {
               color="white"
               className="leading-none"
             >
-              2020 - 2023
+              2023 - 2024
             </Typography>
           </TimelineHeader>
           <TimelineBody className="pb-8">
@@ -32,11 +32,16 @@ const Experience = () => {
               color="gray"
               className="font-normal text-gray-600"
             >
-              <h1 className="text-xl">Personal Projects</h1>
-              <p>
+              <h1 className="text-xl font-bold mb-2">
+                <span className="border-b-2 border-purple-500">
+                  Personal Projects
+                </span>
+              </h1>
+              <p className="text-base">
                 Developed and launched various personal projects, including a
-                portfolio website. Used modern frontend technologies like React, Next.js, and Tailwind
-                CSS to build responsive and visually appealing user interfaces.
+                portfolio website. Used modern frontend technologies like React,
+                Next.js, and Tailwind CSS to build responsive and visually
+                appealing user interfaces.
               </p>
             </Typography>
           </TimelineBody>
@@ -61,8 +66,12 @@ const Experience = () => {
               color="gray"
               className="font-normal text-gray-600"
             >
-              <h1 className="text-xl font-bold">Frontend Developer Intern</h1>
-              <p>
+              <h1 className="text-xl font-bold mb-2">
+                <span className="border-b-2 border-purple-500 pt-1">
+                  Frontend Developer Intern
+                </span>
+              </h1>
+              <p className="text-base">
                 Worked as a frontend developer intern at Loop Technologies,
                 collaborating with a team of developers to build and maintain
                 web applications. Developed user-facing features and optimized
