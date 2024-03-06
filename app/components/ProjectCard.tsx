@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Project } from "../projectData";
 import Stacks from "./Stacks";
 import { Button } from "../MaterialTailwind";
+import NewBadge from "./Flag";
 
 interface Props {
   title: string;
@@ -11,6 +12,7 @@ interface Props {
   gitUrl: string;
   previewUrl: string;
   stack: string[];
+  isNew: boolean;
 }
 
 const ProjectCard = ({
@@ -20,6 +22,7 @@ const ProjectCard = ({
   gitUrl,
   previewUrl,
   stack,
+  isNew,
 }: Props) => {
   return (
     <div className="flex flex-col h-full">
@@ -50,7 +53,10 @@ const ProjectCard = ({
       </div>
 
       <div className="text-white rounded-b-xl  bg-[#181818] py-6 px-4">
-        <h5 className=" text-xl font-semibold mb-2">{title}</h5>
+        <div className="flex justify-between mb-2">
+          <h5 className=" text-xl font-semibold">{title}</h5>
+          <NewBadge isNew={isNew} />
+        </div>
         <p className="text-[#ADB7BE]">{description}</p>
         <div className="mt-4">
           {stack.map((s, index) => (

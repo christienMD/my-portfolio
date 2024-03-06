@@ -7,6 +7,7 @@ export interface Project {
   previewUrl: string;
   tag: string[];
   stack: string[];
+  isNew?: boolean;
 }
 
 export const projectData: Project[] = [
@@ -32,6 +33,7 @@ export const projectData: Project[] = [
       "NextAuth.js",
       "Stripe",
     ],
+    isNew: true,
   },
   {
     id: 2,
@@ -55,6 +57,7 @@ export const projectData: Project[] = [
       "Prisma",
       "NextAuth.js",
     ],
+    isNew: true,
   },
 
   {

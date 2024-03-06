@@ -15,6 +15,8 @@ import {
   TimelineIcon,
   TimelineBody,
   Typography,
+  Chip,
+  Checkbox
 } from "@material-tailwind/react";
 
 export {
@@ -32,4 +34,6 @@ export {
   TimelineIcon,
   TimelineBody,
   Typography,
+  Chip,
+  Checkbox
 };
