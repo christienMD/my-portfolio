@@ -13,7 +13,7 @@ const Cerification = () => {
       <h2 className="text-3xl font-bold text-white mb-7 text-center">
         Certificates
       </h2>
-      <div className="grid md:grid-cols-3 md:gap-6 gap-6">
+      <div className="grid md:grid-cols-3 md:gap-6 gap-10">
         <Cerificate src={htmlandCSSC} alt="html Certificate" />
         <Cerificate src={jsC} alt="js Certificate" />
         <Cerificate src={tsC} alt="ts Certificate" />

@@ -8,7 +8,7 @@ interface Props {
 
 const Cerificate = ({ src, alt }: Props) => {
   return (
-    <div className="card card-compact bg-base-100 shadow-xl overflow-hidden sm:max-w-full sm:mx-auto transition-transform ease-in-out duration-500 hover:transform hover:scale-105 hover:delay-400 rounded-2xl flex flex-col gap-16 bg-grey3">
+    <div className="card card-compact bg-base-100 shadow-xl overflow-hidden sm:max-w-full sm:mx-auto transition-transform ease-in-out duration-500 hover:transform hover:scale-105 hover:delay-400 rounded-2xl flex flex-col gap-16 bg-gray">
       <Image src={src} alt={alt} className="object-cover rounded-xl" />
     </div>
   );

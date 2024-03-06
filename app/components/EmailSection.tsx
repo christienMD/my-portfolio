@@ -10,6 +10,7 @@ import z from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import toast, { Toaster } from "react-hot-toast";
+import { Button } from "../MaterialTailwind";
 
 const schema = z.object({
   email: z.string().email(),
@@ -30,7 +31,7 @@ const EmailSection = () => {
     register,
     handleSubmit,
     reset,
-    formState: { errors },
+    formState: { errors, isSubmitting },
   } = useForm<FormData>({
     resolver: zodResolver(schema),
   });
@@ -44,7 +45,7 @@ const EmailSection = () => {
     })
       .then((res) => res.json())
       .then((response) => {
-        reset()
+        reset();
         toast.success("Your Message has been sent successfully. Thank you!");
       })
       .catch((err) => {
@@ -144,12 +145,14 @@ const EmailSection = () => {
                 <p className="text-error">{errors.message.message}</p>
               )}
             </div>
-            <button
+            <Button
+              placeholder=""
+              loading={isSubmitting}
               type="submit"
-              className="bg-purple-500 hover:bg-purple-600 text-white font-medium py-2.5 rounded lg w-full"
+              className="flex items-center justify-center capitalize bg-purple-500 hover:bg-purple-600 text-white font-medium py-2.5 rounded lg w-full"
             >
               Send Message
-            </button>
+            </Button>
           </form>
         </div>
       </div>

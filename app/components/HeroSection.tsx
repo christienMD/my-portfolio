@@ -69,18 +69,18 @@ const HeroSection = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.3, easeIn: 0.3 }}
         >
-          <div className="flex flex-col gap-2 justify-center items-center floating-img">
+          <div className="flex flex-col gap-2 justify-center items-center">
             <motion.div
-              // initial={{ y: 0 }}
-              // animate={{
-              //   y: [-10, 0, -10],
-              //   z: [-5, 0, -4],
-              //   transition: {
-              //     duration: 1.6,
-              //     repeat: Infinity,
-              //     ease: "easeInOut",
-              //   },
-              // }}
+              initial={{ y: 0 }}
+              animate={{
+                y: [-10, 0, -10],
+                z: [-5, 0, -4],
+                transition: {
+                  duration: 1.6,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                },
+              }}
             >
               <div className="rounded-full overflow-hidden h-48 w-48 mx-auto">
                 <Image
