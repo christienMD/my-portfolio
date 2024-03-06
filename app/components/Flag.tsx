@@ -11,16 +11,16 @@ const NewBadge = ({ isNew }: Props) => {
         <Chip
           value="New"
           variant="ghost"
-          color="red"
+          color="purple"
           className="white"
           icon={
             <Checkbox
               crossOrigin=""
               checked={true}
-              color="red"
+              color="purple"
               ripple={false}
               containerProps={{ className: "p-0" }}
-              className="-ml-px border-2 border-red-800 before:hidden checked:border-red-800 checked:bg-red-900 text-white"
+              className="-ml-px border-2 border-purple-800 before:hidden checked:border-purple-800 checked:bg-purple-900 text-white"
             />
           }
         />
