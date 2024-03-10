@@ -101,7 +101,7 @@ const HeroSection = () => {
               </Link>
 
               <Link
-                href="https://www.linkedin.com/in/mesueh-christien-18886121b"
+                href="https://www.linkedin.com/in/mesueh-christien-3a691a2b7/"
                 className="rounded-full p-2 border border-gray-300"
               >
                 <FaLinkedinIn size={24} />

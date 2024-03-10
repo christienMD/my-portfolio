@@ -13,7 +13,6 @@ import ImageContainer from "./ImageContainer";
 import AboutSkill from "./AboutSkill";
 import CustomImage from "./CustomImage";
 
-
 const AboutSection = () => {
   return (
     <section className="text-[#c2c9ce]" id="about">
@@ -21,15 +20,15 @@ const AboutSection = () => {
         <div className="md:max-w-2xl lg:max-w-3xl">
           <h2 className="text-4xl font-bold text-white my-5">About Me</h2>
           <p className="text-base align-baseline items-center">
-            I am Passionate Frontend Web Developer with a proven record of creating
-            captivating web designs and dynamic features. Equipped with a robust
-            foundation in HTML, CSS, JavaScript, TypeScript, React.js, and
-            Next.js, honed through a rigorous computer science degree. I have a
-            keen ability to adapt to new technologies swiftly. Beyond formal
-            education, I consistently broaden my skill set, embracing emerging
-            technologies and industry best practices. Committed to delivering
-            exceptional user experiences through innovation and continuous
-            learning.
+            I am a Passionate Frontend Web Developer with a proven record of
+            creating captivating web designs and dynamic features. Equipped with
+            a robust foundation in HTML, CSS, JavaScript, TypeScript, React.js,
+            and Next.js, honed through a rigorous computer science degree. I
+            have a keen ability to adapt to new technologies swiftly. Beyond
+            formal education, I consistently broaden my skill set, embracing
+            emerging technologies and industry best practices. Committed to
+            delivering exceptional user experiences through innovation and
+            continuous learning.
           </p>
         </div>
       </div>

@@ -79,7 +79,7 @@ const EmailSection = () => {
               <FaGithub size={22} />
             </Link>
 
-            <Link href="https://www.linkedin.com/in/mesueh-christien-18886121b">
+            <Link href="https://www.linkedin.com/in/mesueh-christien-3a691a2b7">
               <FaLinkedinIn size={22} />
             </Link>
             <Link href="https://mesuehchristian12@gmail.com">
