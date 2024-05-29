@@ -9,6 +9,8 @@ import gitImg from "@/public/images/git.webp";
 import tsImg from "@/public/images/typescript.png";
 import tailwindImg from "@/public/images/tailwindcss.webp";
 import chakraImg from "@/public/images/icons8-chakra-ui-144.png";
+import php from "@/public/images/PHP-logo.svg.png";
+import laravel from "@/public/images/laravel-2.svg";
 import ImageContainer from "./ImageContainer";
 import AboutSkill from "./AboutSkill";
 import CustomImage from "./CustomImage";
@@ -43,7 +45,7 @@ const AboutSection = () => {
         </div>
       </div>
       <div className="mt-10 flex justify-center">
-        <div className="flex flex-row flex-wrap sm:max-w-full md:max-w-xl lg:max-w-4xl justify-center gap-2">
+        <div className="flex flex-row flex-wrap sm:max-w-full md:max-w-xs lg:max-w-4xl justify-center gap-2">
           <ImageContainer>
             <CustomImage src={htmlImg} alt="html-image" />
           </ImageContainer>
@@ -70,6 +72,12 @@ const AboutSection = () => {
           </ImageContainer>
           <ImageContainer>
             <CustomImage src={chakraImg} alt="git-image" />
+          </ImageContainer>
+          <ImageContainer>
+            <CustomImage src={php} alt="php-image" />
+          </ImageContainer>
+          <ImageContainer>
+            <CustomImage src={laravel} alt="laravel-image" />
           </ImageContainer>
         </div>
       </div>

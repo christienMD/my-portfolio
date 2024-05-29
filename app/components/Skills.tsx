@@ -47,6 +47,13 @@ const Skills = () => {
           color="purple"
           className="mb-4 mt-1  bg-[#ADB7BE]"
         />
+        <h5>PHP</h5>
+        <Progress
+          placeholder=""
+          value={80}
+          color="purple"
+          className="mb-4 mt-1  bg-[#ADB7BE]"
+        />
       </div>
       <div>
         <h5>React Query & React Context</h5>
@@ -88,6 +95,13 @@ const Skills = () => {
         <Progress
           placeholder=""
           value={70}
+          color="purple"
+          className="mb-4 mt-1 bg-[#ADB7BE]"
+        />
+        <h5>Laravel</h5>
+        <Progress
+          placeholder=""
+          value={75}
           color="purple"
           className="mb-4 mt-1 bg-[#ADB7BE]"
         />
