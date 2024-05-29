@@ -12,8 +12,8 @@ import { FaGithub, FaLinkedinIn, FaRegEnvelope } from "react-icons/fa";
 const HeroSection = () => {
   const handleDownloadCV = () => {
     const link = document.createElement("a");
-    link.href = `${window.location.origin}/files/Mesueh_Christien_Resume.pdf`;
-    link.download = "Mesueh_Christien_Resume.pdf";
+    link.href = `${window.location.origin}/files/MesuehChristien_Resume _.pdf`;
+    link.download = "MesuehChristien_Resume _.pdf";
     link.click();
   };
 
@@ -36,7 +36,7 @@ const HeroSection = () => {
                 // Same substring at the start will only be typed out once, initially
                 "Mesueh Christien",
                 1200, // wait 1s before replacing "Mice" with "Hamsters"
-                "A Frontend Web Developer",
+                "A Full Stack Web Developer",
                 1200,
               ]}
               wrapper="span"
