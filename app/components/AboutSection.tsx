@@ -20,7 +20,7 @@ const AboutSection = () => {
         <div className="md:max-w-2xl lg:max-w-3xl">
           <h2 className="text-4xl font-bold text-white my-5">About Me</h2>
           <p className="text-base align-baseline items-center">
-            I am a Passionate Frontend Web Developer with a proven record of
+            {/* I am a Passionate Frontend Web Developer with a proven record of
             creating captivating web designs and dynamic features. Equipped with
             a robust foundation in HTML, CSS, JavaScript, TypeScript, React.js,
             and Next.js, honed through a rigorous computer science degree. I
@@ -28,7 +28,17 @@ const AboutSection = () => {
             formal education, I consistently broaden my skill set, embracing
             emerging technologies and industry best practices. Committed to
             delivering exceptional user experiences through innovation and
-            continuous learning.
+            continuous learning. */}
+            As an enthusiastic Full Stack Developer, I excel in both frontend
+            and backend development, creating engaging web designs and robust
+            functionalities that enhance user experience. I possess a
+            comprehensive foundation in HTML, CSS, JavaScript, TypeScript,
+            React.js, Next.js, PHP, and Laravel, strengthened by a degree in
+            Computer Science. My quick adaptability to new technologies and
+            continuous self-improvement ensure I stay at the forefront of the
+            ever-evolving tech landscape. I am committed to delivering
+            exceptional user experiences through innovation, creativity, and a
+            relentless pursuit of knowledge.
           </p>
         </div>
       </div>
