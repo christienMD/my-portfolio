@@ -52,7 +52,7 @@ const ProjectCard = ({
         </div>
       </div>
 
-      <div className="text-white rounded-b-xl  bg-[#181818] py-6 px-4">
+      <div className="flex-grow flex flex-col text-white rounded-b-xl  bg-[#181818] py-6 px-4">
         <div className="flex justify-between mb-2">
           <h5 className=" text-xl font-semibold">{title}</h5>
           <NewBadge isNew={isNew} />
